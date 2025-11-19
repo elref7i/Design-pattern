@@ -12,6 +12,7 @@ class User {
   }
 }
 
+// احمد عمل شاى وعلى خدها
 const ahmed = User("ahmed", 22);
 const ali = User("ali", 23);
 
@@ -22,6 +23,8 @@ class API {
     if (API.#instance) return API.#instance;
     this.#base = baseUrl;
     API.#instance = this;
+    console.log(this);
+    console.log(API.#instance);
   }
 
   async get() {
